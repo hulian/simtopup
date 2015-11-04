@@ -1,0 +1,36 @@
+
+.btn2{
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 105px;
+  height: 45px;
+}
+
+#AIS_12Call {
+  background-image: url("img/ais-logo-small.png");
+}
+
+#DTAC_Happy {
+  background-image: url("img/dtac-logo-small.png");
+}
+
+#True_Move {
+  background-image: url("img/true-logo-small.png");
+}
+
+#dont_know_network{
+  background-position: center;
+}
+
+#alipay {
+  background-image: url("img/alipay.png");
+  width: 130px;
+  height: 50px;
+}
+
+#paypal {
+  background-image: url("img/paypal.png");
+  width: 130px;
+  height:50px;
+}
+

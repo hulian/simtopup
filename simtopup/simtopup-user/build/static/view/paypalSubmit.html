@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>前往PayPal支付</title>
+
+<meta name="description" content="海外手机充值，国外手机充值，海外支付宝手机充值，泰国手机充值">
+<meta name="author" content="海外手机充值">
+
+<link href="../css/lib/bootstrap.min.css" rel="stylesheet">
+<link href="../css/lib/style.css" rel="stylesheet">
+<link href="../css/thaitopup.css" rel="stylesheet">
+
+</head>
+<body>
+	<script src="//www.paypalobjects.com/api/checkout.js" async></script>
+	<script>
+		window.paypalCheckoutReady = function() {
+			paypal.checkout.setup('6XF3MPZBZV6HU', {
+				environment : 'sandbox',
+				container : 'paypalForm',
+			});
+		};
+	</script>
+	<form style="display: none;" id="paypalForm" method="post"
+		action="http://166.78.8.98/cgi-bin/aries.cgi?sandbox=1&direct=1&returnurl=http://166.78.8.98/cgi-bin/return.htm&cancelurl=http://166.78.8.98/cgi-bin/cancel.htm">
+		<button id="paypalCheckOut" class="btn btn-default" type="submit">Paypal支付</button>
+	</form>
+	<script type="text/javascript">
+	document.getElementById("paypalForm").submit();
+	</script>
+</body>
+</html>

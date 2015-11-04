@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.simtopup</groupId>
+    <artifactId>simtopup</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  <artifactId>simtopup-undertow</artifactId>
+  
+    <dependencies>
+		<dependency>
+			<groupId>com.simtopup</groupId>
+			<artifactId>simtopup-core</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.undertow</groupId>
+			<artifactId>undertow-core</artifactId>
+			<version>${undertow.version}</version>
+		</dependency>
+	</dependencies>
+	
+</project>
